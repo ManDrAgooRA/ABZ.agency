@@ -1,5 +1,5 @@
-import './assets/styles/App.scss'
-
+import './assets/styles/app.scss'
+ 
 function App() {
   return (
     <>
