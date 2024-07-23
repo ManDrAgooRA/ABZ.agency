@@ -1,6 +1,6 @@
-import './mainPage.scss';
+import './MainSection.scss';
 
-export const MainPage = () => {
+export const MainSection = () => {
   return (
     <section>
       <div className='inner-container'>

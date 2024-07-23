@@ -56,11 +56,6 @@
       }
     }
 
-    & > * {
-      position: relative;
-      z-index: 100;
-    }
-
     @media (max-width: 1024px) {
       background-image: url('../../assets/images/1024.png');
     }
