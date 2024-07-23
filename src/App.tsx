@@ -1,10 +1,11 @@
-import './assets/styles/app.scss'
+import { Header } from './components/Header/Header'
  
 function App() {
   return (
-    <>
-      <p>test</p>
-    </>
+    <div className='container'>
+      <Header />
+      <div>test</div>
+    </div>
   )
 }
 

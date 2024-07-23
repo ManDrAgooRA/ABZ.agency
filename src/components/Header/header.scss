@@ -1,0 +1,60 @@
+@import '../../assets/styles/variables.scss';
+
+.header {
+
+  &-container {
+    padding: 16px 0px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1024px) {
+      margin: 0px 60px;
+    }
+
+    @media (max-width: 436px) {
+      margin: 0px 16px;
+    }
+  }
+
+  &-logo {
+    height: 26px;
+  }
+
+  &-nav {
+    margin-top: 2px;
+
+    & ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+      & li {
+        list-style: none;
+        &:nth-child(1){
+          margin-right: 10px;
+          @media (max-width: 1024px) {
+            margin-right: 12px;
+          }
+          & a {
+            padding: 6px 30px;
+          }
+        }
+        & a {
+          padding: 6px 22px;
+          text-decoration: none;
+          color: #000;
+          background: $primary;
+          border-radius:36px;
+          -webkit-border-radius:36px;
+          -moz-border-radius:36px;
+          -ms-border-radius:36px;
+          -o-border-radius:36px;
+          // &:nth-child(1){
+          //   margin-right: 10px;
+          //   background:rgb(255, 217, 1);
+          // }
+        }
+      }
+    }
+  }
+}
