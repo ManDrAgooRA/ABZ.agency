@@ -1,11 +1,15 @@
 import { Header } from './components/Header/Header'
+import { MainPage } from './pages/Main/MainPage'
  
 function App() {
   return (
+    <>
+    <Header />
     <div className='container'>
-      <Header />
+      <MainPage />
       <div>test</div>
     </div>
+    </>
   )
 }
 

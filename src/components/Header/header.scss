@@ -3,6 +3,8 @@
 .header {
 
   &-container {
+    max-width: 1168px;
+    margin: 0 auto;
     padding: 16px 0px;
     display: flex;
     justify-content: space-between;
@@ -11,8 +13,16 @@
       margin: 0px 60px;
     }
 
+    @media (max-width: 768px) {
+      margin: 0px 32px;
+    }
+
     @media (max-width: 436px) {
       margin: 0px 16px;
+    }
+
+    @media (max-width: 360px) {
+      max-width: 100%;
     }
   }
 
@@ -42,18 +52,14 @@
         & a {
           padding: 6px 22px;
           text-decoration: none;
-          color: #000;
+          color: $black;
           background: $primary;
-          border-radius:36px;
-          -webkit-border-radius:36px;
-          -moz-border-radius:36px;
-          -ms-border-radius:36px;
-          -o-border-radius:36px;
-          // &:nth-child(1){
-          //   margin-right: 10px;
-          //   background:rgb(255, 217, 1);
-          // }
-        }
+          border-radius: $border-radius;
+          -webkit-border-radius: $border-radius;
+          -moz-border-radius: $border-radius;
+          -ms-border-radius: $border-radius;
+          -o-border-radius: $border-radius;
+}
       }
     }
   }
